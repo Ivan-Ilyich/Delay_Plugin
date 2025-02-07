@@ -6,7 +6,8 @@ DerivedData/
 .idea/    # JetBrains CLion / AppCode
 .vscode/  # Visual Studio Code
 
-./.idea
+./.idea/
+./idea/
 # Ignore JUCE-generated code
 JuceLibraryCode/
 
