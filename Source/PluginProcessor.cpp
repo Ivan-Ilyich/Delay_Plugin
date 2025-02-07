@@ -7,6 +7,15 @@
 */
 
 #include "PluginProcessor.h"
+
+#include <juce_audio_basics/buffers/juce_AudioChannelSet.h>
+#include <juce_audio_basics/buffers/juce_AudioSampleBuffer.h>
+#include <juce_audio_basics/buffers/juce_FloatVectorOperations.h>
+#include <juce_audio_basics/midi/juce_MidiBuffer.h>
+#include <juce_audio_processors/processors/juce_AudioProcessorEditor.h>
+#include <juce_core/memory/juce_MemoryBlock.h>
+#include <juce_core/text/juce_String.h>
+
 #include "PluginEditor.h"
 
 //==============================================================================
