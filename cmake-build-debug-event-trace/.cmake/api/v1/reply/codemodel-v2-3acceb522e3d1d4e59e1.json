@@ -1,0 +1,173 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "JUCE",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-JUCE-Debug-66e0d72aa559377cd239.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/Users/ivanilyich/JUCE"
+				},
+				{
+					"build" : "JUCE/modules",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-JUCE.modules-Debug-d34c920903413cc2450c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/Users/ivanilyich/JUCE/modules"
+				},
+				{
+					"build" : "JUCE/extras/Build",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-JUCE.extras.Build-Debug-216777f5f1792038eca7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/Users/ivanilyich/JUCE/extras/Build"
+				},
+				{
+					"build" : "JUCE/extras/Build/juceaide",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-JUCE.extras.Build.juceaide-Debug-2dc9d6d31abcacaf77fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 1,
+					"source" : "/Users/ivanilyich/JUCE/extras/Build/juceaide"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Delay_Clion",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "JUCE",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Delay_Clion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delay_Clion-Debug-acb573af7e9598a5fe91.json",
+					"name" : "Delay_Clion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delay_Clion_AU::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delay_Clion_AU-Debug-705c5af45df6e7e798af.json",
+					"name" : "Delay_Clion_AU",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delay_Clion_All::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delay_Clion_All-Debug-19f46fbce4b4da52f6bc.json",
+					"name" : "Delay_Clion_All",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delay_Clion_VST3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delay_Clion_VST3-Debug-74896a60967f8b3708ff.json",
+					"name" : "Delay_Clion_VST3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "juce_vst3_helper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-juce_vst3_helper-Debug-27893d77fc1dff02a2ae.json",
+					"name" : "juce_vst3_helper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ivanilyich/Documents/plugin_project/Delay_Clion/cmake-build-debug-event-trace",
+		"source" : "/Users/ivanilyich/Documents/plugin_project/Delay_Clion"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
