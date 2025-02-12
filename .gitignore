@@ -1,0 +1,28 @@
+# Ignore build directories
+cmake-build-debug/
+cmake-build-release/
+Builds/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore JUCE auto-generated code folder
+JuceLibraryCode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+
+# Ignore compiled object files and executables
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.a
+*.lib
