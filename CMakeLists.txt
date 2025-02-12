@@ -11,7 +11,7 @@ add_subdirectory(${JUCE_DIR} JUCE)
 
 # Define the plugin target
 juce_add_plugin(Delay_Clion
-        PLUGIN_NAME "Delay"
+        PLUGIN_NAME "Delay_Clion"
         COMPANY_NAME "YourCompany"
         IS_SYNTH FALSE
         NEEDS_MIDI_INPUT FALSE
@@ -22,7 +22,7 @@ juce_add_plugin(Delay_Clion
         PLUGIN_MANUFACTURER_CODE Juce
         PLUGIN_CODE Juce
         FORMATS AU VST3
-        PRODUCT_NAME "Delay"
+        PRODUCT_NAME "Delay_Clion"
 )
 
 # Add source files (modify based on your actual project structure)
