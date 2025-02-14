@@ -32,20 +32,20 @@
 
 juce_add_gui_app(AudioPluginHost
     BUNDLE_ID                       com.juce.pluginhost
-    ICON_BIG                        "${CMAKE_CURRENT_SOURCE_DIR}/Source/JUCEAppIcon.png"
+    ICON_BIG                        "Source/JUCEAppIcon.png"
     MICROPHONE_PERMISSION_ENABLED   TRUE
     PLUGINHOST_AU                   TRUE)
 
 juce_generate_juce_header(AudioPluginHost)
 
 target_sources(AudioPluginHost PRIVATE
-    Source/HostStartup.cpp
-    Source/Plugins/ARAPlugin.cpp
-    Source/Plugins/IOConfigurationWindow.cpp
-    Source/Plugins/InternalPlugins.cpp
-    Source/Plugins/PluginGraph.cpp
-    Source/UI/GraphEditorPanel.cpp
-    Source/UI/MainHostWindow.cpp)
+        Source/HostStartup.cpp
+        Source/Plugins/ARAPlugin.cpp
+        Source/Plugins/IOConfigurationWindow.cpp
+        Source/Plugins/InternalPlugins.cpp
+        Source/Plugins/PluginGraph.cpp
+        Source/UI/GraphEditorPanel.cpp
+        Source/UI/MainHostWindow.cpp)
 
 juce_add_binary_data(AudioPluginHostData SOURCES
     ../../examples/Assets/cassette_recorder.wav

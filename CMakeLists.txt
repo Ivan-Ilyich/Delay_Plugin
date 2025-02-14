@@ -35,3 +35,5 @@ target_sources(Delay_Clion PRIVATE
 target_link_libraries(Delay_Clion PRIVATE juce::juce_audio_utils juce::juce_audio_plugin_client)
 
 target_include_directories(Delay_Clion PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_subdirectory(AudioPluginHost)
