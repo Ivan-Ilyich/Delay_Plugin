@@ -10,24 +10,25 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
-
-//==============================================================================
 /**
 */
-class NewProjectAudioProcessorEditor  : public juce::AudioProcessorEditor
+class DelayAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
-    NewProjectAudioProcessorEditor (NewProjectAudioProcessor&);
-    ~NewProjectAudioProcessorEditor() override;
+    DelayAudioProcessorEditor (DelayAudioProcessor&);  // You can rename NewProjectAudioProcessor as needed too.
+    ~DelayAudioProcessorEditor() override;
+    // ...
 
-    //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
-
 private:
+    DelayAudioProcessor& audioProcessor;
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
-    NewProjectAudioProcessor& audioProcessor;
-
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NewProjectAudioProcessorEditor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayAudioProcessorEditor)
 };
+
+
+
+
+//==============================================================================
