@@ -29,6 +29,7 @@
 #  MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, ARE DISCLAIMED.
 #
 # ==============================================================================
+set(JUCE_DIR "/Users/ivanilyich/JUCE")
 
 juce_add_gui_app(AudioPluginHost
     BUNDLE_ID                       com.juce.pluginhost
@@ -48,12 +49,13 @@ target_sources(AudioPluginHost PRIVATE
         Source/UI/MainHostWindow.cpp)
 
 juce_add_binary_data(AudioPluginHostData SOURCES
-    ../../examples/Assets/cassette_recorder.wav
-    ../../examples/Assets/cello.wav
-    ../../examples/Assets/guitar_amp.wav
-    ../../examples/Assets/proaudio.path
-    ../../examples/Assets/reverb_ir.wav
-    ../../examples/Assets/singing.ogg)
+        ${JUCE_DIR}/examples/Assets/cassette_recorder.wav
+        ${JUCE_DIR}/examples/Assets/cello.wav
+        ${JUCE_DIR}/examples/Assets/guitar_amp.wav
+        ${JUCE_DIR}/examples/Assets/proaudio.path
+        ${JUCE_DIR}/examples/Assets/reverb_ir.wav
+        ${JUCE_DIR}/examples/Assets/singing.ogg)
+
 
 target_compile_definitions(AudioPluginHost PRIVATE
     JUCE_ALSA=1
@@ -90,4 +92,4 @@ target_link_libraries(AudioPluginHost PRIVATE
     juce::juce_recommended_lto_flags
     juce::juce_recommended_warning_flags)
 
-juce_add_bundle_resources_directory(AudioPluginHost ../../examples/Assets)
+juce_add_bundle_resources_directory(AudioPluginHost ${JUCE_DIR}/examples/Assets)
